@@ -1,5 +1,11 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "types": ["astro/client", "hast", "mdast", "nlcst", "unist"],
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]
 }
+
