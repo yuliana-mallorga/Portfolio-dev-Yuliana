@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import './src/styles/global.css';  
 import Header from "../components/Header.astro";
 interface Props {
   title: string;
@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -26,7 +26,7 @@ const { title } = Astro.props;
     />
     <title>My portfolio!</title>
   </head>
-  <body>
+  <body class="dark">
     <Header />
     <slot />
   </body>
@@ -35,6 +35,8 @@ const { title } = Astro.props;
 <style>
   :root {
     color-scheme: light dark;
+  
+    /* prefers-color-scheme: light dark; */
   }
 
   html {
@@ -50,11 +52,12 @@ const { title } = Astro.props;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     background: #050505;
     min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
   }
 </style>
