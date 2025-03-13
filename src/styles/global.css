@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    --color-primary: 59 130 246; /* Azul Tailwind */
+    --color-background: 255 255 255; /* Blanco */
+    --color-mint-500: oklch(0.72 0.11 178);
+}
+
+.dark {
+    @theme {
+      --color-primary: 220 38 38; /* Rojo Tailwind */
+      --color-background: 17 24 39; /* Gris oscuro */
+    }
+}
+  
+
+  
