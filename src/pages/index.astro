@@ -3,35 +3,67 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import Badge from "../components/Badge.astro";
 import notepad from "../assets/icons8-notepad-24.png";
+import Socialpill from "../components/Socialpill.astro";
+import LinkedIn from "../components/icons/LinkeIn.astro"
+import GitHub from "../components/icons/GitHub.astro"
+import Mail from "../components/icons/Mail.astro"
 ---
 
-<Layout title="Welcome to my portfolio">
-  <main class="bg-mint-500 p-3">
+<Layout title="Portfolio de Yuliana Mallorga - Web developer and programmer">
+  <main class="p-3">
     <section
       class="w-[80%] mx-auto mb-4 bg-white dark:bg-gray-700 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
     >
       <div>
-        <h1
-          class="uppercase text-5xl text-center font-bold flex gap-x-4 pb-10"
-        >
+        <h1 class="uppercase text-5xl text-center font-bold flex gap-x-4 pb-10">
           Hello! I'm Yuliana Mallorga.
           <div class="flex justify-center items-center">
-            <Badge>
-              <a
-                href="https://www.linkedin.com/in/yuliana-mallorga/"
-                target="_blank">Currently available for work!</a
-              >
-            </Badge>
+            <a
+              href="https://www.linkedin.com/in/yuliana-mallorga/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><Badge> Currently available for work! </Badge></a
+            >
           </div>
         </h1>
       </div>
 
-      <h2 class="text-gray-900 dark:text-white mt-5 tracking-tight text-2xl">
-        "I have three years of experience in web development, and I am
-        passionate about programming. I am from Tucumán, Argentina 🇦🇷. I
-        specialize in creating unique applications by applying my knowledge of
-        frontend and backend development."
+      <h2
+        class="text-gray-900 dark:text-white mt-5 tracking-tight text-xl opacity-80"
+      >
+        "I'm a <span class="text-yellow-100">Web Developer</span> with 3 years of
+        experience. I specialize in frontend and backend development, creating unique
+        applications with passion. Based in Tucumán, Argentina 🇦🇷."
       </h2>
+      <nav>
+        <ul class="flex flex-row gap-x-3 mt-8">
+          <li
+            >
+            <Socialpill href="https://www.linkedin.com/in/yuliana-mallorga/">
+                <LinkedIn class="w-6 h-6" /> LinkedIn
+            </Socialpill>
+            </li
+          >
+          <li>
+            <Socialpill href="https://github.com/yuliana-mallorga/">
+              <GitHub class="w-6 h-6" /> GitHub
+            </Socialpill>
+          </li>
+          <li>
+            <Socialpill href="https://github.com/yuliana-mallorga/">
+              <Mail class="w-6 h-6" /> yulianamallorga@gmail.com
+            </Socialpill>
+          </li>
+          <li>
+  
+          </li>
+          <li>
+  
+          </li>
+          <li>
+          </li>
+        </ul>
+      </nav>
     </section>
 
     <section
@@ -39,14 +71,14 @@ import notepad from "../assets/icons8-notepad-24.png";
     >
       <div>
         <span
-        class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg"
-      >
-        <img
-          class="w-6 h-6 stroke-white self-center"
-          src={notepad.src}
-          alt="notepad"
-        />
-      </span>
+          class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg"
+        >
+          <img
+            class="w-6 h-6 stroke-white self-center"
+            src={notepad.src}
+            alt="notepad"
+          />
+        </span>
         <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm indent-px">
           I specialize in UI design, responsive web design, and visual
           development, as well as backend development. My expertise includes
