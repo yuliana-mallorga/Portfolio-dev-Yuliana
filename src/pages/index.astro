@@ -4,12 +4,15 @@ import "../styles/global.css";
 import Badge from "../components/Badge.astro";
 import notepad from "../assets/icons8-notepad-24.png";
 import Socialpill from "../components/Socialpill.astro";
-import LinkedIn from "../components/icons/LinkeIn.astro"
-import GitHub from "../components/icons/GitHub.astro"
-import Mail from "../components/icons/Mail.astro"
+import LinkedInIcon from "../components/icons/LinkeIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
 ---
 
-<Layout title="Portfolio de Yuliana Mallorga - Web developer and programmer">
+<Layout
+  title="Portfolio de Yuliana Mallorga - Web developer and programmer"
+  description="Hire Yuliana Mallorga to create your web or mobile app. Web developer specialized in creating unique web applications."
+>
   <main class="p-3">
     <section
       class="w-[80%] mx-auto mb-4 bg-white dark:bg-gray-700 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5"
@@ -37,31 +40,24 @@ import Mail from "../components/icons/Mail.astro"
       </h2>
       <nav>
         <ul class="flex flex-row gap-x-3 mt-8">
-          <li
-            >
+          <li>
             <Socialpill href="https://www.linkedin.com/in/yuliana-mallorga/">
-                <LinkedIn class="w-6 h-6" /> LinkedIn
-            </Socialpill>
-            </li
-          >
-          <li>
-            <Socialpill href="https://github.com/yuliana-mallorga/">
-              <GitHub class="w-6 h-6" /> GitHub
+              <LinkedInIcon class="w-6 h-6" /> LinkedIn
             </Socialpill>
           </li>
           <li>
             <Socialpill href="https://github.com/yuliana-mallorga/">
-              <Mail class="w-6 h-6" /> yulianamallorga@gmail.com
+              <GitHubIcon class="w-6 h-6" /> GitHub
             </Socialpill>
           </li>
           <li>
-  
+            <Socialpill href="https://github.com/yuliana-mallorga/">
+              <MailIcon class="w-6 h-6" /> yulianamallorga@gmail.com
+            </Socialpill>
           </li>
-          <li>
-  
-          </li>
-          <li>
-          </li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </nav>
     </section>
